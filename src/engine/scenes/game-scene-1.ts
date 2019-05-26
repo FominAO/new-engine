@@ -2,6 +2,7 @@ import { Scene } from "../scene";
 import { Engine } from "../engine";
 import { SpriteSheet } from "../sprite-sheet";
 import { MaterialObject } from "../material-object";
+import { Player } from "../player";
 
 export class GameScene extends Scene {
   name = 'game';
@@ -17,12 +18,11 @@ export class GameScene extends Scene {
 
 
 
-  player: Player = new Player('grag');
+  // player: Player = new Player('grag');
   platforms: MaterialObject[] = [];
 
 
   init() {
-    pla
     this.grag.setXY( 0, 500)
     this.game.ctx.fillStyle = 'yellow'
     this.game.ctx.fillRect(350, 200, 100, 200)
